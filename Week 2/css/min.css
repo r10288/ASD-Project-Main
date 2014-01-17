@@ -1,0 +1,24 @@
+img.logo{   
+	display: block;   
+	margin-left: auto;  
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+label.error{
+	display: block;
+	margin: 10px 0;
+	color: red;
+}
+
+span.red{
+	color: red;
+}
+
+#errorXXX{
+	display: none;
+}
+
+#viewLink{
+	display: none;
+}

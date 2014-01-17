@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<!--
+Ryan Cantone
+ASDI 1401
+Project Week 2
+-->
+
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Manage Social Accounts" />
+		<meta name="keywords" content="html5, mobile development, Full Sail University" />
+		<meta name="robots" content="index, follow" />
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+		<script src="js/libs/modernizr.custom.min.js"></script>
+		<link rel="stylesheet" href="css/min.css" />
+		<link rel="stylesheet" href="css/themes/DarkKnight.css" />
+		
+		<title>Social Management</title>
+		
+
+
+	</head>
+	<body>
+	
+	<div data-role="page" id="home" data-inset="true" data-theme="a">
+		<div data-role="header" data-position="fixed">
+	 		<img src="images/logo 2.png" />
+		</div>
+		<div data-role="content" data-theme="a">
+			<img  class="logo" src="images/logo.png" />
+			<p>
+				<a href="#addItem" data-role="button" data-theme="e" data-ajax="false" data-icon="plus" data-iconpos="right" data-inset="true">Add Social Account</a>
+			</p>
+			<ul data-role="listview" data-dividertheme="a" data-theme="a" data-inset="true" data-filter-theme="a">
+				<li data-role="list-divider" data-theme="a">Data Types </li>
+				<li>
+					<a href="#" id="xml" data-theme="a" />
+						<h3>XML</h3>
+						<p><i>Extensive Markup Language</i></p>
+					</a>
+				</li>
+				<li>
+					<a href="#" id="json" data-theme="a" />
+						<h3>JSON</h3>
+						<p><i>JavaScript Object Notation</i></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#" id="csv" data-ajax="false" data-theme="a" />
+						<h3>CSV</h3>
+						<p><i>Coma Seperated Values</i></p>
+					</a>
+				</li>
+			</ul>
+			
+			<div id="xhr"></div>
+			
+			<p><br /></p>
+			<ul data-role="listview" data-filter="true" data-dividertheme="a" data-theme="a"  data-filter-theme="a" data-inset="true">
+				<li data-role="list-divider">Accounts</li>
+				<li>
+					
+					<a href="#members"  id="major" data-ajax="false" data-theme="a" />
+						<img src="images/thumbs/facebook.png" />
+						<h3>Facebook</h3>
+						<p>Your Facebook Account(s)</p>
+					</a>
+				</li>
+				<li>
+					<a href="#members" id="international" data-ajax="false" data-theme="a" />
+						<img src="images/thumbs/twitter.png" />
+						<h3>Twitter</h3>
+						<p>Your Twitter Account(s)</p>
+					</a>
+				</li>
+				<li>
+					<a href="#members" id="national" data-ajax="false" data-theme="a" />
+						<img src="images/thumbs/instragram.png" />
+						<h3>Instagram</h3>
+						<p>Your Instagram Account(s)</p>
+					</a>
+				</li>
+				
+     </ul>
+				
+				
+
+		</div>
+		<div data-role="footer" data-position="fixed"  data-id="nav">
+			<div data-role="navbar" data-iconpos="left">
+				<ul> 
+					<li>
+						<a href="index.html" data-icon="home" data-ajax="false">Home</a>
+					</li>
+					<li>
+						<a href="index.html#addItem" data-icon="grid" data-ajax="false">Manage</a>
+					</li>
+					<li>
+						<a href="index.html#about" data-icon="info" data-ajax="false">About</a>
+					</li>
+				</ul>
+			
+			</div>
+		</div>
+	</div>
+	
+	
+<div data-role="page" id="members" data-add-back-btn="true" data-theme="a">
+		<div data-role="header" data-position="fixed">
+	 		<h1>Account(s) List</h1>
+		</div>
+
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true" data-filter-theme="a">
+
+				<li>
+					<a href="#members" data-ajax="false"/>					
+						<ul>
+						<li><h3>My Facebook Account</h3></li>
+						<li>First Name: Ryan</li>
+						<li>Last Name: Cantone</li>
+						<li>Email: ryan.cantone@fullsail.edu</li>
+						<li>Birth Day: 12-12-1987</li>
+						<li>Sex: Male</li>
+						<li>Profession: Student</li>
+						<li>Notes: This is my main account</li>
+						</ul>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#members" data-ajax="false" data-theme="c" />
+						
+						<ul>
+						<li><h3>My Twitter Account</h3></li>
+						<li>First Name: Debbie</li>
+						<li>Last Name: Cross</li>
+						<li>Email: dcross@email.com</li>
+						<li>Birth Day: 10-12-72</li>
+						<li>Twitter Name: @the_cross</li>
+						<li>Sex: Male</li>
+						<li>Profession: Accountant</li>
+						<li>Notes: This is my main twitter account</li>
+						</ul>
+					</a>
+				</li>
+				<li>
+					<a href="#members" data-ajax="false" data-theme="c" />
+						
+						<ul>
+						<li><h3>My Instagram Account</h3></li>
+						<li>First Name: Josh</li>
+						<li>Last Name: Snow</li>
+						<li>Email: thesnowman@email.com</li>
+						<li>Birth Day: 12-25-82</li>
+						<li>Instagram Name: jsnow876</li>
+						<li>Sex: Male</li>
+						<li>Profession: Programmer</li>
+						<li>Notes: This is my main instagram account</li>
+						</ul>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+<div data-role="footer" data-position="fixed"  data-id="nav">
+			<div data-role="navbar" data-iconpos="left">
+				<ul> 
+					<li>
+						<a href="index.html" data-icon="home" data-ajax="false">Home</a>
+					</li>
+					<li>
+						<a href="index.html#addItem" data-icon="grid" data-ajax="false">Manage Accounts</a>
+					</li>
+					<li>
+						<a href="index.html" data-icon="info" data-ajax="false">About</a>
+					</li>
+				</ul>
+			
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+
+	<div data-role="page" id="about" data-add-back-btn="true" data-theme="a">
+		<div data-role="header" data-position="fixed">
+	 		<img src="images/logo 2.png" />
+		</div>
+
+		<div data-role="content">
+		
+			<a href="index.html" data-role="button" data-theme="e" data-ajax="false">Gold</a>
+			<a href="silver.html" data-role="button" data-theme="d" data-ajax="false">Silver</a>
+			<a href="bronze.html" data-role="button" data-theme="b" data-ajax="false">Bronze</a>
+
+
+		</div>
+<div data-role="footer" data-position="fixed"  data-id="nav">
+			<div data-role="navbar" data-iconpos="left">
+				<ul> 
+					<li>
+						<a href="index.html" data-icon="home" data-ajax="false">Home</a>
+					</li>
+					<li>
+						<a href="index.html#addItem" data-icon="grid" data-ajax="false">Manage</a>
+					</li>
+					<li>
+						<a href="index.html" data-icon="info" data-ajax="false">About</a>
+					</li>
+				</ul>
+			
+			</div>
+		</div>
+
+	</div>
+	
+	
+	
+	<div data-role="page" id="addItem" data-add-back-btn="true" data-theme="a">
+		<div data-role="header" data-position="fixed">
+	 		<img src="images/logo 2.png" />
+		</div>
+
+		<div data-role="content">
+		
+		<a href="#viewMembers" data-role="button" data-theme="e" id="displayLink">View Account(s)</a>
+		<a href="#" id="clearLink" data-role="button" data-theme="e"  data-icon="delete" data-iconpos="right">Clear Accounts</a>
+		
+		
+		<form id="formAddMember" action="#" method="post">
+			<fieldset>
+				<span><span class="red">*</span> Fields are Required.</span>
+	 
+					
+					<div data-role="fieldcontain">
+						<label for="alias"><span class="red">*</span>Account Type: </label>
+						<input name="alias" type="text" id="alias" placeholder="What type of account is this ie. twitter, facebook etc...?" class="required" />
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="fName"><span class="red">*</span>First Name: </label>
+						<input name="fName" type="text" id="fName" placeholder="What is your First Name?" class="required"/>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="lName"><span class="red">*</span>Last Name: </label>
+						<input name="lName" type="text" id="lName" placeholder="What is your Last Name?" class="required"/>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="eMail"><span class="red">*</span>E-mail: </label>
+						<input name="eMail" type="email" id="eMail" placeholder="you@email.com" class="required email" />
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="bDay">Birthday: </label>
+						<input type="date" name="bDay" id="bDay" placeholder="87-02-14" />
+					</div>
+					
+					<div data-role="fieldcontain">
+						Gender:
+						<input type="radio" name="sex" value="Male" id="male"/ ><label for="male"> Male</label>
+						<input type="radio" name="sex" value="Female" id="female" /><label for="female"> Female</label>
+					</div>
+								
+					<div data-role="fieldcontain">	
+						<label for="skill">Social Level:</label>
+						<input type="range" data-highlight="true" name="skill" min="1" value="5" max="10" id="skill" />
+					</div>
+					
+					<div data-role="fieldcontain">
+						<legend>Is this your main account?</legend>
+							<input name="pro" id="pro" type="checkbox" /><label for="pro">Yes</label>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="division">Location in U.S.:</label>
+							<select name="division" id="division">
+								<option data-placeholder="true">Please Select a Location</option>
+								<option value="West">West</option>
+				 				<option value="Central">Central</option>
+								<option value="East">East</option>
+                             </select></br>
+							Please let us know where you are located.
+					</div>
+									
+					<div data-role="fieldcontain">
+						<label for="notes">Notes:</label>
+						<textarea rows="4" cols="32" name="notes" id="notes" placeholder="Notes about this account here."></textarea>
+					</div>
+			
+			<input type="submit" value="Submit!" id="submit" data-theme="d"/>
+			<p><input type="reset" value="Clear Form" data-theme="c"/></p>
+			<a href="#formErrors" id="errorXXX" data-rel="dialog" data-transition="pop">Open Errors</a>
+			<a href="#viewMembers" id="viewLink">View Accounts</a>
+			</fieldset>
+		</form>
+
+		</div>
+<div data-role="footer" data-position="fixed"  data-id="nav">
+			<div data-role="navbar" data-iconpos="left">
+				<ul> 
+					<li>
+						<a href="index.html" data-icon="home" data-ajax="false">Home</a>
+					</li>
+					<li>
+						<a href="index.html#addItem" data-icon="grid" data-ajax="false">Manage</a>
+					</li>
+					<li>
+						<a href="index.html#about" data-icon="info" data-ajax="false">About</a>
+					</li>
+				</ul>
+			
+			</div>
+		</div>
+
+	</div>
+
+
+	<div data-role="dialog" id="formErrors">
+		<div data-role="header">
+	 		<h1>Please Add</h1>
+		</div>
+
+		<div data-role="content">
+			<ul>
+			</ul>
+		</div>
+	</div>
+
+
+
+	<div data-role="page" id="viewMembers" data-theme="a">
+		<div data-role="header" data-position="fixed">
+	 		<img src="images/logo 2.png" />
+		</div>
+
+		<div data-role="content" id="data">
+		
+
+		</div>
+<div data-role="footer" data-position="fixed"  data-id="nav">
+			<div data-role="navbar" data-iconpos="left">
+				<ul> 
+					<li>
+						<a href="index.html" data-icon="home" data-ajax="false">Home</a>
+	
+					</li>
+					<li>
+						<a href="index.html#addItem" data-icon="grid" data-ajax="false">Manage</a>
+					</li>
+					<li>
+						<a href="index.html#about" data-icon="info" data-ajax="false">About</a>
+					</li>
+				</ul>
+			
+			</div>
+		</div>
+
+	</div>
+
+
+
+	</body>
+
+
+
+
+	
+	
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+ 	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+ 	<script src="js/libs/jquery.validate.min.js" type="text/javascript"></script>
+ 	<script src="js/AJAX.js" type="text/javascript"></script>
+ 	<script src="js/main.js" type="text/javascript"></script>
+</html>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<members>
+    <member>
+        <alias>XML Johnny</alias>
+        <fname>John</fname>
+        <lname>Doe</lname>
+        <email>johnny@vensure.net</email>
+        <birthday>02141987</birthday>
+        <language>English</language>
+        <skill>200</skill>
+        <gender>Male</gender>
+        <professional>Yes</professional>
+        <division>Central</division>
+        <league>Major</league>
+        <notes>This is not a test!</notes>
+    </member>
+    <member>
+        <alias>XML Joe</alias>
+        <fname>Joe</fname>
+        <lname>Nichols</lname>
+        <email>nicols@vensure.net</email>
+        <birthday>02141988</birthday>
+        <language>English</language>
+        <skill>200</skill>
+        <gender>Male</gender>
+        <professional>Yes</professional>
+        <division>West</division>
+        <league>Major</league>
+        <notes>World of Warcraft!</notes>
+    </member>
+    <member>
+        <alias>XML Iiro</alias>
+        <fname>Iiro</fname>
+        <lname>Simonen</lname>
+        <email>simonene@vensure.net</email>
+        <birthday>03151988</birthday>
+        <language>English</language>
+        <skill>500</skill>
+        <gender>Male</gender>
+        <professional>Yes</professional>
+        <division>Central</division>
+        <league>International</league>
+        <notes>I can beat anyone!</notes>
+    </member>
+    <member>
+        <alias>XML TJ</alias>
+        <fname>Timothy</fname>
+        <lname>allen</lname>
+        <email>allen@vensure.net</email>
+        <birthday>01011987</birthday>
+        <language>English</language>
+        <skill>350</skill>
+        <gender>Male</gender>
+        <professional>Yes</professional>
+        <division>East</division>
+        <league>Major</league>
+        <notes>Florida!</notes>
+    </member>
+    <member>
+        <alias>XML Angie</alias>
+        <fname>Angela</fname>
+        <lname>Waters</lname>
+        <email>waters@vensure.net</email>
+        <birthday>03021987</birthday>
+        <language>English</language>
+        <skill>300</skill>
+        <gender>Male</gender>
+        <professional>Yes</professional>
+        <division>East</division>
+        <league>Major</league>
+        <notes>East Coast!</notes>
+    </member>
+</members>

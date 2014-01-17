@@ -1,0 +1,75 @@
+{
+	"members":
+	[
+		{
+			"alias": ["Gamer Name:", "JSON Demlok"],
+			"fName": ["First Name:", "Johnny"],
+			"lName": ["Last Name:", "Caraveo"],
+			"eMail": ["Email:", "JohnnyCaraveo@gmail.com"],
+			"bDay": ["Birth Date:", "02-14-1987"],
+			"language": ["Language:", "English"],
+			"skill": ["Skill:", "150"],
+			"sex": ["Sex:", "Male"],
+			"pro": ["Professional:", "Yes"],
+			"division": ["Division:", "Central"],
+			"league": ["League:", "Major"],
+			"notes": ["Notes:", "This is not a test."]
+		},
+		{
+			"alias": ["Gamer Name:", "JSON Ender"],
+			"fName": ["First Name:", "John"],
+			"lName": ["Last Name:", "Car"],
+			"eMail": ["Email:", "Caraveo@me.com"],
+			"bDay": ["Birth Date:", "02-14-1987"],
+			"language": ["Language:", "English"],
+			"skill": ["Skill:", "150"],
+			"sex": ["Sex:", "Male"],
+			"pro": ["Professional:", "Yes"],
+			"division": ["Division:", "West"],
+			"league": ["League:", "International"],
+			"notes": ["Notes:", "The enemies gate is down."]
+		},
+		{
+			"alias": ["Gamer Name:", "JSON Bean"],
+			"fName": ["First Name:", "Rich"],
+			"lName": ["Last Name:", "Gonzales"],
+			"eMail": ["Email:", "gonzales@gmail.com"],
+			"bDay": ["Birth Date:", "06-14-1987"],
+			"language": ["Language:", "English"],
+			"skill": ["Skill:", "45"],
+			"sex": ["Sex:", "Male"],
+			"pro": ["Professional:", "No"],
+			"division": ["Division:", "West"],
+			"league": ["League:", "Major"],
+			"notes": ["Notes:", "I want to be a pro gamer."]
+		},
+		{
+			"alias": ["Gamer Name:", "JSON Xander"],
+			"fName": ["First Name:", "Jane"],
+			"lName": ["Last Name:", "Doe"],
+			"eMail": ["Email:", "JaneDoe@gmail.com"],
+			"bDay": ["Birth Date:", "12-23-1987"],
+			"language": ["Language:", "English"],
+			"skill": ["Skill:", "90"],
+			"sex": ["Sex:", "Female"],
+			"pro": ["Professional:", "Yes"],
+			"division": ["Division:", "Central"],
+			"league": ["League:", "International"],
+			"notes": ["Notes:", "I am a pro."]
+		},
+		{
+			"alias": ["Gamer Name:", "JSON Demetry"],
+			"fName": ["First Name:", "Joe"],
+			"lName": ["Last Name:", "Smo"],
+			"eMail": ["Email:", "Smo@vensure.com"],
+			"bDay": ["Birth Date:", "12-23-1985"],
+			"language": ["Language:", "English"],
+			"skill": ["Skill:", "200"],
+			"sex": ["Sex:", "Male"],
+			"pro": ["Professional:", "Yes"],
+			"division": ["Division:", "East"],
+			"league": ["League:", "Major"],
+			"notes": ["Notes:", "W00t w00t East Coast."]
+		}
+	]
+}

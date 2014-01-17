@@ -1,0 +1,63 @@
+---
+	- alias: YAML Johnny
+        firstname: John
+        lastname: Doe
+        email: johnny@vensure.net
+        birthday: 02141987
+        language: English
+        skill: 200
+        gender: Male
+        professional: Yes
+        division: Central
+        league: Major
+        notes: This is not a test!
+    - alias: YAML Joe
+        firstname: Joe
+        lastname: Nichols
+        email: nicols@vensure.net
+        birthday: 02141988
+        language: English
+        skill: 200
+        gender: Male
+        professional: Yes
+        division: West
+        league: Major
+        notes: World of Warcraft!
+    - alias:  YAML Iiro
+        firstname: Iiro
+        lastname: Simonen
+        email: simonene@vensure.net
+        birthday: 03151988
+        language: English
+        skill: 500
+        gender: Male
+        professional: Yes
+        division: Central
+        league: International
+        notes: I can beat anyone!
+   
+    - alias:  YAML TJ
+        firstname: Timothy
+        lastname: allen
+        email: allen@vensure.net
+        birthday: 01011987
+        language: English
+        skill: 350
+        gender: Male
+        professional: Yes
+        division: East
+        league: Major
+        notes: Florida!
+    
+    - alias:  YAML Angie
+        firstname: Angela
+        lastname: Waters
+        email: waters@vensure.net
+        birthday: 03021987
+        language: English
+        skill: 300
+        gender: Male
+        professional: Yes
+        division: East
+        league: Major
+        notes: East Coast!
